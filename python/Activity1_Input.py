@@ -1,0 +1,5 @@
+Name = input("Enter the Name:")
+age= int(input("Enter the age:"))
+year = str( ( 2020 - age ) + 100 )
+print("My Name is " + Name + " my age is " + str(age))
+print( Name + " will be 100 years old in the year " + year )
