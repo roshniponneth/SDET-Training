@@ -1,0 +1,27 @@
+package Session5;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Activity5_2 {
+
+    public static void main(String[] args) {
+
+        // Create a new instance of the Firefox driver
+        WebDriver driver = new FirefoxDriver();
+
+        //Open the browser
+        driver.get("https://www.training-support.net/selenium/dynamic-controls");
+        WebElement checkbox= driver.findElement(By.xpath("//input[@type='checkbox']"));
+	      System.out.println("Checkbox selected : " +checkbox.isSelected());
+	    
+	      checkbox.click();
+	      System.out.println("Checkbox is clicked : " );
+	      System.out.println("Checkbox selected : " +checkbox.isSelected());
+		  //          driver.close();
+
+    }
+
+}
